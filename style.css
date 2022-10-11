@@ -6,7 +6,7 @@
 
 button {
   background-color: aliceblue;
-  border: 2px solid black;
+  border: 2px solid grey;
   border-radius: 2rem;
   height: 10vh;
   width: 10vh;
@@ -36,13 +36,17 @@ body {
   width: 50vh;
   border-radius: 1rem;
   display: flex;
+  flex-direction: column;
 }
 
 .background--calc h1 {
   margin-left: 2rem;
   margin-top: 2rem;
+  height: 2rem;
 }
 
 .buttons--calc {
   display: flex;
+  margin-top: 10vh;
+  justify-content: left;
 }
