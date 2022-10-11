@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  background-color: aliceblue;
+  border: 2px solid black;
+  border-radius: 2rem;
+  height: 10vh;
+  width: 10vh;
+  font-size: 2rem;
+}
+
+body {
+  height: 100vh;
+  background: rgb(152, 0, 199);
+  background: linear-gradient(
+    180deg,
+    rgba(152, 0, 199, 1) 0%,
+    rgba(21, 92, 215, 1) 100%
+  );
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background--calc {
+  background-color: aliceblue;
+  height: 60vh;
+  width: 50vh;
+  border-radius: 1rem;
+  display: flex;
+}
+
+.background--calc h1 {
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.buttons--calc {
+  display: flex;
+}
