@@ -20,11 +20,12 @@ let c;
 
 btn__7.addEventListener("click", function () {
   if (typeof a == `undefined`) {
-    result.innerHTML = "7";
     let a = 7;
-    let c = a.toString();
-  } else if (typeof a == `number`) {
-    result.innerHTML = c + 7;
+    result.innerHTML = `${a}`;
+    let d = a.toString();
+  } else if (typeof d == `string`) {
+    let d = `${result.innerHTML.toString() + 7}`;
+    result.innerHTML = `${d}`;
   }
 });
 
