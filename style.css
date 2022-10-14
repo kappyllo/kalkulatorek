@@ -48,7 +48,46 @@ body {
 
 .buttons--calc {
   display: flex;
-  margin-top: 7vh;
+  margin-top: 4vh;
   margin-left: 0.2vw;
   justify-content: left;
+}
+
+.buttons--calc:hover button {
+  cursor: pointer;
+}
+
+.btn__7,
+.btn__8,
+.btn__9,
+.btn__devide,
+.btn__4,
+.btn__5,
+.btn__6,
+.btn__multiply,
+.btn__1,
+.btn__2,
+.btn__3,
+.btn__0,
+.btn__equal {
+  transition: 0.2s;
+  margin-top: 1rem;
+}
+
+.btn__7:hover,
+.btn__8:hover,
+.btn__9:hover,
+.btn__devide:hover,
+.btn__4:hover,
+.btn__5:hover,
+.btn__6:hover,
+.btn__multiply:hover,
+.btn__1:hover,
+.btn__2:hover,
+.btn__3:hover,
+.btn__0:hover,
+.btn__equal:hover {
+  background-color: rgba(21, 92, 215, 1);
+  color: white;
+  transition: 0.2s;
 }
