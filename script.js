@@ -14,19 +14,50 @@ const btn__2 = document.querySelector(".btn__2");
 const btn__3 = document.querySelector(".btn__3");
 const btn__0 = document.querySelector(".btn__0");
 const btn__equal = document.querySelector(".btn__equal");
-let a;
-let b;
-let c;
+
+const addnumber = function (x) {
+  let d = `${result.innerHTML.toString() + x}`;
+  result.innerHTML = `${d}`;
+  let a = result.innerHTML;
+  return a;
+};
 
 btn__7.addEventListener("click", function () {
-  if (typeof a == `undefined`) {
-    let a = 7;
-    result.innerHTML = `${a}`;
-    let d = a.toString();
-  } else if (typeof d == `string`) {
-    let d = `${result.innerHTML.toString() + 7}`;
-    result.innerHTML = `${d}`;
-  }
+  addnumber(7);
 });
 
-btn__8.addEventListener("click", function () {});
+btn__8.addEventListener("click", function () {
+  addnumber(8);
+});
+
+btn__9.addEventListener("click", function () {
+  addnumber(9);
+});
+
+btn__4.addEventListener("click", function () {
+  addnumber(4);
+});
+
+btn__5.addEventListener("click", function () {
+  addnumber(5);
+});
+
+btn__6.addEventListener("click", function () {
+  addnumber(6);
+});
+
+btn__1.addEventListener("click", function () {
+  addnumber(1);
+});
+
+btn__2.addEventListener("click", function () {
+  addnumber(2);
+});
+
+btn__3.addEventListener("click", function () {
+  addnumber(3);
+});
+
+btn__0.addEventListener("click", function () {
+  addnumber(0);
+});
