@@ -14,6 +14,8 @@ const btn__2 = document.querySelector(".btn__2");
 const btn__3 = document.querySelector(".btn__3");
 const btn__0 = document.querySelector(".btn__0");
 const btn__equal = document.querySelector(".btn__equal");
+const btn__add = document.querySelector(".btn__add");
+const btn__clear = document.querySelector(".btn__clear");
 
 const addnumber = function (x) {
   let d = `${result.innerHTML.toString() + x}`;
@@ -60,4 +62,18 @@ btn__3.addEventListener("click", function () {
 
 btn__0.addEventListener("click", function () {
   addnumber(0);
+});
+
+btn__multiply.addEventListener("click", function () {
+  let firstNumber = result.innerHTML;
+  let calcMode = "multiply";
+  result.innerHTML = "";
+  return firstNumber, calcMode;
+});
+
+btn__equal.addEventListener("click", function () {
+  let secondNumber = result.innerHTML;
+  if (calcMode == "multiply") {
+    result.innerHTML = `${firstNumber * secondNumber}`;
+  }
 });

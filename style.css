@@ -69,7 +69,9 @@ body {
 .btn__2,
 .btn__3,
 .btn__0,
-.btn__equal {
+.btn__equal,
+.btn__add,
+.btn__clear {
   transition: 0.2s;
   margin-top: 1rem;
 }
@@ -86,7 +88,9 @@ body {
 .btn__2:hover,
 .btn__3:hover,
 .btn__0:hover,
-.btn__equal:hover {
+.btn__equal:hover,
+.btn__add:hover,
+.btn__clear:hover {
   background-color: rgba(21, 92, 215, 1);
   color: white;
   transition: 0.2s;
