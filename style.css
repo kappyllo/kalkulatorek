@@ -102,5 +102,6 @@ body {
   .background--calc {
     padding-top: 20vh;
     height: 85vh;
+    width: 100vh;
   }
 }
