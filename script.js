@@ -91,9 +91,21 @@ btn0.addEventListener("click", function () {
 
 btnEqual.addEventListener("click", function () {
   if (symbolPick == "devide") {
+    result.innerHTML = `${
+      Number(firstNumber.innerHTML) / Number(secondNumber.innerHTML)
+    }`;
   } else if (symbolPick == "multiply") {
+    result.innerHTML = `${
+      Number(firstNumber.innerHTML) * Number(secondNumber.innerHTML)
+    }`;
   } else if (symbolPick == "add") {
+    result.innerHTML = `${
+      Number(firstNumber.innerHTML) + Number(secondNumber.innerHTML)
+    }`;
   } else if (symbolPick == "subtrack") {
+    result.innerHTML = `${
+      Number(firstNumber.innerHTML) - Number(secondNumber.innerHTML)
+    }`;
   }
 });
 
@@ -105,6 +117,7 @@ btnAdd.addEventListener("click", function () {
 
 btnClear.addEventListener("click", function () {
   symbolSelected = false;
+  symbolPick = "";
   firstNumber.innerHTML = "";
   symbolSign.innerHTML = "";
   secondNumber.innerHTML = "";
