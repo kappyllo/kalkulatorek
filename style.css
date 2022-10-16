@@ -50,7 +50,7 @@ body {
   display: flex;
   margin-top: 4vh;
   margin-left: 0.9vw;
-  justify-content: left;
+  justify-content: center;
 }
 
 .buttons--calc:hover button {
@@ -96,4 +96,11 @@ body {
   background-color: rgba(21, 92, 215, 1);
   color: white;
   transition: 0.2s;
+}
+
+@media (max-width: 767px) {
+  .background--calc {
+    padding-top: 20vh;
+    height: 85vh;
+  }
 }
