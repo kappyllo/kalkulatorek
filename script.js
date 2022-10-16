@@ -117,10 +117,13 @@ btnAdd.addEventListener("click", function () {
 
 btnClear.addEventListener("click", function () {
   symbolSelected = false;
+  result.innerHTML = `<span class="first__number"></span><span class="symbol"></span>
+  <span class="second__number"></span>`;
   symbolPick = "";
-  firstNumber.innerHTML = "";
-  symbolSign.innerHTML = "";
-  secondNumber.innerHTML = "";
+  firstNumber.innerHTML = " ";
+  symbolSign.innerHTML = " ";
+  secondNumber.innerHTML = " ";
+  location.reload();
 });
 
 btnSubtrack.addEventListener("click", function () {
