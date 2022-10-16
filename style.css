@@ -42,14 +42,14 @@ body {
 
 .background--calc h1 {
   height: 2rem;
-  margin-left: 0.5rem;
+  margin-left: 1.5rem;
   margin-top: 2rem;
 }
 
 .buttons--calc {
   display: flex;
   margin-top: 4vh;
-  margin-left: 0.2vw;
+  margin-left: 0.9vw;
   justify-content: left;
 }
 
@@ -71,7 +71,8 @@ body {
 .btn__0,
 .btn__equal,
 .btn__add,
-.btn__clear {
+.btn__clear,
+.btn__subtrack {
   transition: 0.2s;
   margin-top: 1rem;
 }
@@ -90,7 +91,8 @@ body {
 .btn__0:hover,
 .btn__equal:hover,
 .btn__add:hover,
-.btn__clear:hover {
+.btn__clear:hover,
+.btn__subtrack:hover {
   background-color: rgba(21, 92, 215, 1);
   color: white;
   transition: 0.2s;

@@ -1,79 +1,117 @@
 "use strict";
 
+// selecting html
 const result = document.querySelector(".result__text");
-const btn__7 = document.querySelector(".btn__7");
-const btn__8 = document.querySelector(".btn__8");
-const btn__9 = document.querySelector(".btn__9");
-const btn__devide = document.querySelector(".btn__devide");
-const btn__4 = document.querySelector(".btn__4");
-const btn__5 = document.querySelector(".btn__5");
-const btn__6 = document.querySelector(".btn__6");
-const btn__multiply = document.querySelector(".btn__multiply");
-const btn__1 = document.querySelector(".btn__1");
-const btn__2 = document.querySelector(".btn__2");
-const btn__3 = document.querySelector(".btn__3");
-const btn__0 = document.querySelector(".btn__0");
-const btn__equal = document.querySelector(".btn__equal");
-const btn__add = document.querySelector(".btn__add");
-const btn__clear = document.querySelector(".btn__clear");
+const firstNumber = document.querySelector(".first__number");
+const symbolSign = document.querySelector(".symbol");
+const secondNumber = document.querySelector(".second__number");
+const btn7 = document.querySelector(".btn__7");
+const btn8 = document.querySelector(".btn__8");
+const btn9 = document.querySelector(".btn__9");
+const btnDevide = document.querySelector(".btn__devide");
+const btn4 = document.querySelector(".btn__4");
+const btn5 = document.querySelector(".btn__5");
+const btn6 = document.querySelector(".btn__6");
+const btnMultiply = document.querySelector(".btn__multiply");
+const btn1 = document.querySelector(".btn__1");
+const btn2 = document.querySelector(".btn__2");
+const btn3 = document.querySelector(".btn__3");
+const btn0 = document.querySelector(".btn__0");
+const btnEqual = document.querySelector(".btn__equal");
+const btnAdd = document.querySelector(".btn__add");
+const btnClear = document.querySelector(".btn__clear");
+const btnSubtrack = document.querySelector(".btn__subtrack");
 
-const addnumber = function (x) {
-  let d = `${result.innerHTML.toString() + x}`;
-  result.innerHTML = `${d}`;
-  let a = result.innerHTML;
-  return a;
+let symbolPick = "";
+let symbolSelected = false;
+firstNumber.innerHTML = "";
+symbolSign.innerHTML = "";
+secondNumber.innerHTML = "";
+
+const addNumber = function (x) {
+  if (symbolSelected == false) {
+    firstNumber.innerHTML = `${firstNumber.innerHTML + x}`;
+  } else if (symbolSelected == true) {
+    secondNumber.innerHTML = `${secondNumber.innerHTML + x}`;
+  }
 };
 
-btn__7.addEventListener("click", function () {
-  addnumber(7);
+//nasluchiwanie
+btn7.addEventListener("click", function () {
+  addNumber(7);
 });
 
-btn__8.addEventListener("click", function () {
-  addnumber(8);
+btn8.addEventListener("click", function () {
+  addNumber(8);
 });
 
-btn__9.addEventListener("click", function () {
-  addnumber(9);
+btn9.addEventListener("click", function () {
+  addNumber(9);
 });
 
-btn__4.addEventListener("click", function () {
-  addnumber(4);
+btnDevide.addEventListener("click", function () {
+  symbolSelected = true;
+  symbolSign.innerHTML = ` : `;
+  symbolPick = "devide";
 });
 
-btn__5.addEventListener("click", function () {
-  addnumber(5);
+btn4.addEventListener("click", function () {
+  addNumber(4);
 });
 
-btn__6.addEventListener("click", function () {
-  addnumber(6);
+btn5.addEventListener("click", function () {
+  addNumber(5);
 });
 
-btn__1.addEventListener("click", function () {
-  addnumber(1);
+btn6.addEventListener("click", function () {
+  addNumber(6);
 });
 
-btn__2.addEventListener("click", function () {
-  addnumber(2);
+btnMultiply.addEventListener("click", function () {
+  symbolSelected = true;
+  symbolSign.innerHTML = ` ꞏ `;
+  symbolPick = "multiply";
 });
 
-btn__3.addEventListener("click", function () {
-  addnumber(3);
+btn1.addEventListener("click", function () {
+  addNumber(1);
 });
 
-btn__0.addEventListener("click", function () {
-  addnumber(0);
+btn2.addEventListener("click", function () {
+  addNumber(2);
 });
 
-btn__multiply.addEventListener("click", function () {
-  let firstNumber = result.innerHTML;
-  let calcMode = "multiply";
-  result.innerHTML = "";
-  return firstNumber, calcMode;
+btn3.addEventListener("click", function () {
+  addNumber(3);
 });
 
-btn__equal.addEventListener("click", function () {
-  let secondNumber = result.innerHTML;
-  if (calcMode == "multiply") {
-    result.innerHTML = `${firstNumber * secondNumber}`;
+btn0.addEventListener("click", function () {
+  addNumber(0);
+});
+
+btnEqual.addEventListener("click", function () {
+  if (symbolPick == "devide") {
+  } else if (symbolPick == "multiply") {
+  } else if (symbolPick == "add") {
+  } else if (symbolPick == "subtrack") {
   }
+});
+
+btnAdd.addEventListener("click", function () {
+  symbolSelected = true;
+  symbolSign.innerHTML = ` + `;
+  symbolPick = "add";
+});
+
+btnClear.addEventListener("click", function () {
+  symbolSelected = false;
+  firstNumber.innerHTML = "";
+  symbolSign.innerHTML = "";
+  secondNumber.innerHTML = "";
+});
+
+btnSubtrack.addEventListener("click", function () {
+  symbolSelected = true;
+  symbolSign.innerHTML = ` - `;
+  symbolPick = "subtrack";
 });
