@@ -105,3 +105,15 @@ body {
     width: 100vh;
   }
 }
+
+@media (max-height: 784px) {
+  .background--calc {
+    height: 65vh;
+  }
+}
+
+@media (max-height: 600px) {
+  .background--calc {
+    height: 70vh;
+  }
+}
